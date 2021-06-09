@@ -1,0 +1,104 @@
+﻿
+.EU_DataTable tbody tr td table tbody tr td
+{
+    background: #c6dac6 none repeat scroll 0 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.rotate
+{
+    background: #8CD08B none repeat scroll 0 0;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 5px;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.rotate:hover
+{
+    transform: rotate(360deg);
+}
+
+a[type='link']
+{
+    font-family: Cambria;
+    font-size: 13px;
+    color: #DD6F93;
+}
+input[type='text']
+{
+    font-family: Cambria;
+    font-size: 14px;
+    width: 250px;
+}
+select, textarea
+{
+    width: 250px;
+}
+textarea [type="address="]
+{
+    height: 79px;
+    width: 245px;
+}
+table
+{
+    width: 100%;
+}
+table tr
+{
+}
+.EU_TableScroll
+{
+    max-height: 275px;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+.EU_DataTable
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+.EU_DataTable tr th
+{
+    background-color: #3C5E84;
+    color: #ffffff;
+    padding: 10px 5px 10px 5px;
+    border: 1px solid #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.EU_DataTable tr th a
+{
+    text-decoration: none;
+    color: White;
+}
+.EU_DataTable tr:nth-child(2n+2)
+{
+    background-color: #f3f4f5;
+}
+
+.EU_DataTable tr:nth-child(2n+1) td [colspan=""]
+{
+    background-color: #d6dadf;
+    color: #454545;
+}
+.EU_DataTable tr td
+{
+    padding: 5px 10px 5px 10px;
+    color: #636E95;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid #cccccc;
+    vertical-align: middle;
+}
+.EU_DataTable tr td:first-child [colspan=""]
+{
+    text-align: center;
+}
+.EU_DataTable tr:nth-child(2n+1)
+{
+    background: none repeat scroll 0 0 #eeeeee;
+}

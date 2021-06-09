@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0110)http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA== -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Home Page
+</title><link href="./Home Page_files/bootstrap.css" rel="stylesheet" type="text/css"><link href="./Home Page_files/Panels.css" rel="stylesheet" type="text/css"><link href="./Home Page_files/StyleEU.css" rel="stylesheet" type="text/css"><link href="./Home Page_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="./Home Page_files/jquery-2.1.4.min.js.download" type="text/javascript"></script>
+    <script src="./Home Page_files/popper.min.js.download" type="text/javascript"></script>
+    <script src="./Home Page_files/bootstrap.js.download" type="text/javascript"></script>
+    <script type="text/javascript" src="./Home Page_files/jquery.validate.min.js.download"></script>
+    <script type="text/javascript" src="./Home Page_files/Validations.js.download"></script>
+    <script src="./Home Page_files/Messages.js.download" type="text/javascript"></script>
+    <script src="./Home Page_files/jquery.maskedinput.min.js.download" type="text/javascript"></script>
+    <style type="text/css">
+        .UpperLine ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .UpperLine ul li
+        {
+            float: left;
+        }
+        
+        .UpperLine ul li a
+        {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+        body
+        {
+            font-family: Yatra One;
+        }
+        .top-links
+        {
+            margin-top: 2px;
+        }
+        .top-links li
+        {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+        }
+        .top-links li a
+        {
+            font-size: 14px;
+            display: block;
+            line-height: 1;
+        }
+        .top-links li
+        {
+            margin: -4px 0 0;
+            padding: 5px 10px 7px;
+            font-size: 13px;
+        }
+        .UpperRow
+        {
+            background: #cce5ff;
+            border: #b8daff;
+            color: #004085;
+        }
+    </style>
+    <style>
+        .btnHeader
+        {
+            -moz-user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857;
+            margin-bottom: 0;
+            padding: 6px 12px;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+        div.trigger
+        {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: #4cb1ca;
+            background-image: url("http://cdn.nic.in/common/images/plus.png");
+            background-origin: padding-box;
+            background-position: 15% 55%;
+            background-repeat: no-repeat;
+            background-size: auto auto;
+            border-bottom-color: -moz-use-text-color;
+            border-bottom-style: none;
+            border-bottom-width: medium;
+            border-image-outset: 0 0 0 0;
+            border-image-repeat: stretch stretch;
+            border-image-slice: 100% 100% 100% 100%;
+            border-image-source: none;
+            border-image-width: 1 1 1 1;
+            border-left-color-ltr-source: physical;
+            border-left-color-rtl-source: physical;
+            border-left-color-value: -moz-use-text-color;
+            border-left-style-ltr-source: physical;
+            border-left-style-rtl-source: physical;
+            border-left-style-value: none;
+            border-left-width-ltr-source: physical;
+            border-left-width-rtl-source: physical;
+            border-left-width-value: medium;
+            border-right-color-ltr-source: physical;
+            border-right-color-rtl-source: physical;
+            border-right-color-value: -moz-use-text-color;
+            border-right-style-ltr-source: physical;
+            border-right-style-rtl-source: physical;
+            border-right-style-value: none;
+            border-right-width-ltr-source: physical;
+            border-right-width-rtl-source: physical;
+            border-right-width-value: medium;
+            border-top-color: -moz-use-text-color;
+            border-top-style: none;
+            border-top-width: medium;
+            color: #fff;
+            font-size: 0.8125em;
+            line-height: 25px;
+            z-index: 20000;
+        }
+        div.trigger:hover
+        {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: #222222;
+            background-image: url("http://cdn.nic.in/common/images/plus.png");
+            background-origin: padding-box;
+            background-position: 15% 55%;
+            background-repeat: no-repeat;
+            background-size: auto auto;
+            border-bottom-color: #444444;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-image-outset: 0 0 0 0;
+            border-image-repeat: stretch stretch;
+            border-image-slice: 100% 100% 100% 100%;
+            border-image-source: none;
+            border-image-width: 1 1 1 1;
+            border-left-color-ltr-source: physical;
+            border-left-color-rtl-source: physical;
+            border-left-color-value: #444444;
+            border-left-style-ltr-source: physical;
+            border-left-style-rtl-source: physical;
+            border-left-style-value: solid;
+            border-left-width-ltr-source: physical;
+            border-left-width-rtl-source: physical;
+            border-left-width-value: 1px;
+            border-right-color-ltr-source: physical;
+            border-right-color-rtl-source: physical;
+            border-right-color-value: #444444;
+            border-right-style-ltr-source: physical;
+            border-right-style-rtl-source: physical;
+            border-right-style-value: solid;
+            border-right-width-ltr-source: physical;
+            border-right-width-rtl-source: physical;
+            border-right-width-value: 1px;
+            border-top-color: #444444;
+            border-top-style: solid;
+            border-top-width: 1px;
+            color: #fff;
+            z-index: 20000;
+        }
+        div.active.trigger
+        {
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: #222222;
+            background-image: url("http://cdn.nic.in/common/images/minus.png");
+            background-origin: padding-box;
+            background-position: 15% 55%;
+            background-repeat: no-repeat;
+            background-size: auto auto;
+        }
+        .gradHeader
+        {
+            margin-top: -10px;
+            height: 92px;
+            background: rgba(0, 0, 0, 0) url("/images/bg-noise.png") repeat scroll 0 0;
+            float: left;
+            position: relative;
+            width: 100%; /*  background: -webkit-linear-gradient(left top, #2196f3, #02c66c);  
+        background: -o-linear-gradient(bottom right, #2196f3, #02c66c);  
+        background: -moz-linear-gradient(bottom right, #2196f3, #02c66c);  
+        background: linear-gradient(to bottom right, #2196f3, #02c66c); */
+        }
+        .HeadABhiHeader
+        {
+            height: 40px;
+            background: rgba(0, 0, 0, 0) url("/images/Sch_Head.jpg") repeat scroll 0 0;
+            float: left;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="trigger" style="border: 3px solid #d1e7ff; border-right: 0px; text-align: right;
+        font-size: 12pt; font-weight: bolder; cursor: pointer; padding: 10px; width: 212px;
+        position: fixed; background-color: #084689; right: 0px; top: 122px; color: White">
+        Menu &amp; Dashboard
+    </div>
+    <div class="Menupanel" style="width: 400px; z-index: 100; position: fixed; margin-top: 4%; right: 0px; display: none;">
+        <div id="QLinks" style="text-align: left; right: 0px; margin-top: 25%; background-color: White;">
+        <table width="100%" id="SideMenu"><tbody><tr><td><a href="http://scholarshipportal.mp.nic.in/StudentAdmin/Public/CommonDashboard.aspx" title="Applicants"><i class="fa fa-3x fa-windows"></i><br>Dashboard</a></td><td><a href="http://scholarshipportal.mp.nic.in/StudentAdmin/Public/App_Main.aspx" title="Applicants"><i class="fa fa-3x fa-briefcase"></i><br>Post Metric Scholarships</a></td><td><a href="http://scholarshipportal.mp.nic.in/StudentAdmin/Public/Scheme_Dashboard.aspx?PID=Nw==" title="Applicants-SX"><i class="fa fa-3x fa-cube"></i><br>Awas Bhatta Scheme</a></td><td><a href="http://scholarshipportal.mp.nic.in/StudentAdmin/Public/Scheme_Dashboard.aspx?PID=MQ==" title="Applicants-SC"><i class="fa fa-3x fa-user"></i><br>Valmiki Yojana</a></td></tr><tr><td><a href="http://scholarshipportal.mp.nic.in/StudentAdmin/Public/Scheme_Dashboard.aspx?PID=Mw==" title="Applicants-SX"><i class="fa fa-3x fa-female"></i><br>Gaon Ki Beti</a></td><td><a href="http://scholarshipportal.mp.nic.in/StudentAdmin/Public/Scheme_Dashboard.aspx?PID=NA==" title="Applicants-SX"><i class="fa fa-3x fa-female"></i><br>Pratibha Kiran</a></td><td><a href="http://scholarshipportal.mp.nic.in/StudentAdmin/Public/Scheme_Dashboard.aspx?PID=NQ==" title="Applicants-SX"><i class="fa fa-3x fa-male"></i><br>Vikramaditya Yojna</a></td><td><a href="http://scholarshipportal.mp.nic.in/Public/Reports/View_Bank_Details.aspx" title="Applicants"><i class="fa fa-3x fa-bank"></i><br>Bank/Branches</a></td></tr><tr><td><a href="https://play.google.com/store/apps/details?id=com.nic.schoalrship" title="Applicants"><i class="fa fa-3x fa-mobile"></i><br>Mobile App</a></td></tr></tbody></table>
+
+
+
+
+
+ 
+    <style type="text/css">
+        #SideMenu
+        {
+            height: 250px;
+            font-size: 12px;
+        }
+        .panel
+        {
+            opacity: 1;
+            box-shadow: 0px 0px 10px 0px white;
+            background-color: White;
+        }
+        #SideMenu tr td
+        {
+            width: 14.28%;
+            height: 64px;
+            text-align: center;
+            padding: 5px;
+            box-shadow: 0px 0px 10px 0px #CCCCCC;
+            border-radius: 0px;
+        }
+        
+        #SideMenu tr td a
+        {
+            text-decoration: none;
+            display: block;
+            margin: 0 3px 3px 0;
+            color: Black;
+            -webkit-transform: scale(1,1);
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
+            -moz-transform: scale(1,1);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+        }
+        
+        #SideMenu tr td a:hover
+        {
+            -webkit-transform: scale(1.05,1.08);
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
+            -moz-transform: scale(1.05,1.08);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+            position: relative;
+            z-index: 99;
+        }
+        #SideMenu td
+        {
+            background: rgba(33, 150, 243, 0.19);
+            border-radius: 19px;
+            width: 84%;
+            margin: auto;
+        }
+    </style>
+    <div>
+        
+        
+    </div>
+
+
+</div>
+    </div>
+    <form method="post" action="http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA%3d%3d" id="aspnetForm" autocomplete="off" novalidate="novalidate">
+<div class="aspNetHidden">
+<input type="hidden" name="__CSRFTOKEN" id="__CSRFTOKEN" value="/wEFJDc1ZTYxOGU5LTA4ODEtNDQ3Mi1hZWUyLTlhMWY1NmIzYWYwMg==">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Home Page_files/WebResource.axd" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E73307BF">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="FrhuhJTrN-KEKD6VlDZleBCwGUVYEwC3IKePOfFQuccKi6sjNJpImfu19lyIOmz5jXDKIXXcVVIMbXHrTa4b8l3ljYYTcD96u8Yb7mAPkaGQWXvyhn3KtE2yNeqEbEOqilLCFMlHDDIkCu7hoI-E9xVHQN9VhPsezGGVaE0WvA81">
+</div>
+    <div class="container-fluid">
+        <div class="fixed-top UpperLine" style="background-color: snow">
+            <div class="row UpperRow">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul>
+                        <li><a href="http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA==#" class="btn" id="lbTime">Date :31/05/2021 10:02:36</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="pull-right">
+                        <li><a class="btn" href="http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA==#">Skip to main content</a> </li>
+                        <li><a class="btn" href="http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA==#">Screen Reader Access</a> </li>
+                        <li><a class="btn" href="http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA==#">Sitemap</a> </li>
+                        <li><a class="btn" href="http://scholarshipportal.mp.nic.in/Public/main.aspx">Home</a> </li>
+                        <li><a class="btn" id="btn-decrease" href="http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA==#">A-</a> </li>
+                        <li><a class="btn" id="btn-orig" href="http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA==#">A</a> </li>
+                        <li><a class="btn" id="btn-increase" href="http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA==#">A+</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 MiddleLinks">
+                    <div class="pull-left" style="width: 50%">
+                        <img src="./Home Page_files/logo3.png" alt=""></div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 text-right text-info" style="padding-right: 25px;
+                    padding-top: 1%;">
+                    <ul class="top-links pull-right">
+                        <li>
+                            <span id="ctl00_lgName" class="text-success">3276927</span>
+                        </li>
+                        <li><a href="http://scholarshipportal.mp.nic.in/public/main.aspx" style="font-family: Vollkorn" class="maintainLinks">
+                            <i class="fa fa-home fa-2x"></i></a></li>
+                        <li>
+                            <a id="ctl00_btnLoginStatus" class="maintainLinks" href="javascript:__doPostBack(&#39;ctl00$btnLoginStatus$ctl00&#39;,&#39;&#39;)"><i class="fa fa-power-off fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="mainForm" style="margin-top: 202px;">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <ul class="list-group" id="leftItems">
+                    <li class="list-group-item">
+                        <img id="ctl00_Img_App" class="ui-corner-all" src="./Home Page_files/Image_For_View.ashx" style="height:160px;width:200px;">
+                    </li>
+                    <li class="list-group-item">
+                        <a id="ctl00_LinkButton1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Public/App_Main.aspx&quot;, false, true))">
+                                    <i class="icon icon-home"></i> HOME
+                        </a>
+                    </li>
+                    <li class="list-group-item" style="display: none">
+                        </li>
+                    <li class="list-group-item">
+                        <a id="ctl00_btnProfilePhoto" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnProfilePhoto&quot;, &quot;&quot;, false, &quot;&quot;, &quot;UploadStudentPhoto.aspx&quot;, false, true))">
+                                    <i class="icon icon-user"></i> Upload Photo
+                        </a></li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none">
+                        <a id="ctl00_LnkPP" href="javascript:__doPostBack(&#39;ctl00$LnkPP&#39;,&#39;&#39;)">
+                                    <i class="icon  icon-print"></i>
+                                    
+                                    Print Profile</a></li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none;">
+                        </li>
+                    <li class="list-group-item" style="display: none">
+                        <a id="ctl00_btnPrintDraftApplication" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnPrintDraftApplication&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Print_Draft_Application.aspx&quot;, false, true))">
+                                    <i class="icon icon-print"></i>
+                                        
+                                        Print Draft Application</a></li>
+                    <li class="list-group-item">
+                        <a id="ctl00_lnkEditApplication" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkEditApplication&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Public/MyDashboard.aspx&quot;, false, true))">
+                                    <i class="icon icon-search"></i>
+                              Application Dashboard
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a id="ctl00_btn_Unlock_Application" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btn_Unlock_Application&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Unlock_Application.aspx&quot;, false, true))">
+                                    <i class="icon icon-lock"></i>
+                                        
+                                        UNLOCK My Application</a></li>
+                    <li class="list-group-item" style="display: none">
+                        <a id="ctl00_btn_Unlock_AAWAS_Application" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btn_Unlock_AAWAS_Application&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../AavasSahayata/Unlock_AAWAS_Application.aspx&quot;, false, true))">
+                                    <i class="icon icon-lock"></i>
+                                        UNLOCK AAWAS Application</a></li>
+                    <li class="list-group-item" style="display: none;"><a href="http://public/pdf/Student_Manual.pdf" target="_blank" style="display: none; width: 150px;"><b>User Manual for Students</b></a></li>
+                    <li class="list-group-item" style="display: none;"><a href="http://public/pdf/FAQ_STUDENT.pdf" target="_blank" style="display: none; width: 150px;">FAQ- For students</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                
+    <div style="width: 100%">
+        <div class="panel panel-default">
+            <div class="panel-heading">  View Application Process at Various Level(s)<a class="close" href="javascript:history.back();">
+                    ×</a>
+            </div>
+            <div class="panel-body">
+                <div class="alert alert-primary">
+                    View Application Process at Various Level(s)
+                </div>
+                <div>
+	<table class="EU_DataTable" cellspacing="0" rules="all" border="1" id="ctl00_dpPH_gvStatusApp" style="border-collapse:collapse;">
+		<tbody><tr>
+			<th scope="col">S.No.</th><th scope="col">Pass Level</th><th scope="col">Application At</th><th scope="col">Application Status</th><th scope="col">Version No</th><th scope="col">Action Date</th>
+		</tr><tr>
+			<td>
+                                1
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl02$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl02_hdnSeqID" value="1">
+                            </td><td align="left">--                  </td><td align="left">Your Level                                        </td><td align="left">Locked By You</td><td align="center">1</td><td align="center">Oct 14 2019  7:25PM</td>
+		</tr><tr>
+			<td>
+                                2
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl03$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl03_hdnSeqID" value="2">
+                            </td><td align="left">First Pass          </td><td align="left">Institute Level                                   </td><td align="left">Received By Institute</td><td align="center">1</td><td align="center">Oct 14 2019  7:25PM</td>
+		</tr><tr>
+			<td>
+                                3
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl04$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl04_hdnSeqID" value="3">
+                            </td><td align="left">First Pass          </td><td align="left">Institute Level                                   </td><td align="left">Accepted</td><td align="center">1</td><td align="center">Dec  9 2019 11:40AM</td>
+		</tr><tr>
+			<td>
+                                4
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl05$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl05_hdnSeqID" value="4">
+                            </td><td align="left">First Pass          </td><td align="left">Institute Level                                   </td><td align="left">Rejected</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+		</tr><tr>
+			<td>
+                                5
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl06$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl06_hdnSeqID" value="5">
+                            </td><td align="left">First Pass          </td><td align="left">Institute Level                                   </td><td align="left">Rejected Permanent</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+		</tr><tr>
+			<td>
+                                6
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl07$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl07_hdnSeqID" value="6">
+                            </td><td align="left">First Pass          </td><td align="left">Institute Level                                   </td><td align="left">Proposal Locked</td><td align="center">1</td><td align="center">Dec 19 2019 11:50AM</td>
+		</tr><tr>
+			<td>
+                                7
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl08$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl08_hdnSeqID" value="7">
+                            </td><td align="left">Second Pass         </td><td align="left">Sanction Level                                    </td><td align="left">Proposal Received</td><td align="center">1</td><td align="center">Dec 19 2019 11:50AM</td>
+		</tr><tr>
+			<td>
+                                8
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl09$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl09_hdnSeqID" value="8">
+                            </td><td align="left">Second Pass         </td><td align="left">Sanction Level                                    </td><td align="left">Application Sanctioned</td><td align="center">1</td><td align="center">Feb 16 2020  3:26PM</td>
+		</tr><tr>
+			<td>
+                                9
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl10$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl10_hdnSeqID" value="9">
+                            </td><td align="left">Second Pass         </td><td align="left">Sanction Level                                    </td><td align="left">Applicaton Rejected</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+		</tr><tr>
+			<td>
+                                10
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl11$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl11_hdnSeqID" value="10">
+                            </td><td align="left">Second Pass         </td><td align="left">Sanction Level                                    </td><td align="left">Applicaton Rejected Permanent</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+		</tr><tr>
+			<td>
+                                11
+                                <input type="hidden" name="ctl00$dpPH$gvStatusApp$ctl12$hdnSeqID" id="ctl00_dpPH_gvStatusApp_ctl12_hdnSeqID" value="11">
+                            </td><td align="left">Final Pass          </td><td align="left">Disburse Level                                    </td><td align="left">Application Disbursed</td><td align="center">1</td><td align="center">Feb 17 2020  3:33PM</td>
+		</tr>
+	</tbody></table>
+</div>
+                
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="mainFooter" class="fixed-bottom xs-hidden" style="width: auto; background-color: rgb(33, 150, 125); color: white; display: none; margin-top: 86px;">
+        <center>
+            <div class="col-md-12" style="padding: 8px;">
+                The System has been designed &amp; developed by NIC as per the requirements of the department.
+                The system is operated by the concerned officials and officers of the department
+                as per the Instructions/orders. Data, contents, processes are fully managed and
+                updated by the department officials.<br> The screen resolution desired is 1024x768
+                or above.
+            </div>
+        </center>
+    </div>
+    <div id="dvLoading" style="min-height: 2000px; width: 100%; padding-top: 200px; position: fixed;
+        top: 0px; left: 0px; z-index: 100000; background-color: #FFFFFF; text-align: center;
+        opacity: 0.7; display: none;">
+        <br>
+        <br>
+        <img src="./Home Page_files/LoadingProgressBar.gif" alt="Loading...">
+    </div>
+    <script type="text/javascript">
+        var QLinks;
+        $(document).ready(function () {
+            QLinks = $("#QLinks");
+            $(".Menupanel").toggle("fast");
+
+            $("#___dvMessage .modal-content").css("background-color", "auto");
+
+            var $affectedElements = $("body"); // Can be extended, ex. $("div, p, span.someClass")
+            $("#mainForm").css('margin-top', $(".fixed-top").height() + 80);
+            $("#mainFooter").css('margin-top', $(".fixed-bottom").height());
+
+            $(".trigger").click(function () {
+                $(".Menupanel").toggle("fast");
+                $(this).toggleClass("active");
+                return false;
+            });
+
+            $.ajax({
+                url: '/MasterPages/SiteMaps/AluminiMenu.aspx',
+                cache: false,
+                success: function (a) {
+                    QLinks.append(a);
+                    QLinks.fadeIn()
+                    $(".MMtooltips").tooltip({ track: true, showURL: false, fade: 250 });
+                }
+            });
+
+            $("#leftItems li").each(function () {
+
+                if (!$.trim($(this).html())) {
+                    $(this).hide();
+                }
+            });
+
+            // Storing the original size in a data attribute so size can be reset
+            $affectedElements.each(function () {
+                var $this = $(this);
+                $this.data("orig-size", $this.css("font-size"));
+            });
+
+            $("#btn-increase").click(function () {
+                changeFontSize(1);
+            })
+
+            $("#btn-decrease").click(function () {
+                changeFontSize(-1);
+            })
+
+            $("#btn-orig").click(function () {
+                $affectedElements.each(function () {
+                    var $this = $(this);
+                    $this.css("font-size", $this.data("orig-size"));
+                });
+            })
+
+            function changeFontSize(direction) {
+                $affectedElements.each(function () {
+                    var $this = $(this);
+                    $this.css("font-size", parseInt($this.css("font-size")) + direction);
+                });
+            }
+        });
+    </script>
+    </form>
+
+
+<div id="___dvMessage" class="modal hide fade " style="overflow:visible"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><div class="modal-dialog"><div class="modal-content" style="background-color:transparent;border:0"><div class="modal-header"><h3><div id="___dvMessageHeading" style="width: 80%; left: 50px;"></div></h3></div><div id="___dvMessageContent" class="modal-body"></div><div class="modal-footer"><a href="http://scholarshipportal.mp.nic.in/StudentAdmin/DataManagement/Application_Action_History.aspx?ID=NDM4MTU2MA==#" class="button" data-dismiss="modal" aria-hidden="true">Close</a></div></div></div></div></body></html>

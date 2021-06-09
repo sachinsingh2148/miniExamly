@@ -1,0 +1,124 @@
+﻿
+
+
+var _dvMessage, _dvMessageHeading, _dvMessageContent;
+$(document).ready(function () {
+    $('<div id="___dvMessage" class="modal hide fade " style="overflow:visible"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><div class="modal-dialog"><div class="modal-content" style="background-color:transparent;border:0"><div class="modal-header"><h3><div id="___dvMessageHeading" style="width: 80%; left: 50px;"></div></h3></div><div id="___dvMessageContent" class="modal-body"></div><div class="modal-footer"><a href="#" class="button" data-dismiss="modal" aria-hidden="true">Close</a></div></div></div></div>').appendTo('body');
+    _dvMessage = $("#___dvMessage");
+    _dvMessageHeading = $("#___dvMessageHeading");
+    _dvMessageContent = $("#___dvMessageContent");
+    _dvMessage.modal('hide');
+
+    $("#___dvMessage .close ").click(function () {
+        _dvMessage.modal('hide');
+    });
+    $("#___dvMessage .button ").click(function () {
+        _dvMessage.modal('hide');
+    });
+    //    if (_dvMessage.data('modal').isShown) {
+    //        _dvMessage.modal('hide');
+    //        setTimeout("message_success('" + Heading + "','" + Message + "')", 1000);
+    //    }
+});
+//------------------Error Message-------------------------//
+function message_error(Heading, Message, RedirectURL) {
+    if (_dvMessage.is(':visible')) {
+        _dvMessage.modal('hide');
+        setTimeout('message_error("' + Heading + '","' + Message + '")', 500);
+        return;
+    }
+    if (Heading == undefined) {
+        Heading = "Error";
+    }
+    if (Message == undefined) {
+        Message = "Some error occurred.. Please try later";
+    }
+
+    _dvMessage.removeClass().addClass('modal modal-msg-fit hide fade alert alert-danger ');
+    _dvMessageHeading.html('<img  src="http://cdn.nic.in/samagra/Images/Smaily/error.png" width="30px" alt="' + Heading + '" /> ' + Heading);
+    _dvMessageContent.html(Message, RedirectURL);
+    if (RedirectURL == undefined) {
+        _dvMessage.modal('show');
+    }
+    else {
+        _dvMessage.modal('show').on('hidden', function () {
+            window.location = RedirectURL;
+        }); ;
+    }
+
+}
+//------------------Warning Message-------------------------//
+function message_warning(Heading, Message, RedirectURL) {
+    if (_dvMessage.is(':visible')) {
+        _dvMessage.modal('hide');
+        setTimeout('message_warning("' + Heading + '","' + Message + '")', 500);
+        return;
+    }
+    if (Heading == undefined) {
+        Heading = "Warning";
+    }
+    if (Message == undefined) {
+        Message = "Are you sure !";
+    }
+    _dvMessage.removeClass().addClass('modal hide modal-msg-fit fade alert alert-warning ');
+    _dvMessageHeading.html('<img  src="http://cdn.nic.in/samagra/Images/Smaily/warning.png" width="30px" alt="' + Heading + '" /> ' + Heading);
+    _dvMessageContent.html(Message, RedirectURL);
+    if (RedirectURL == undefined) {
+        _dvMessage.modal('show');
+    }
+    else {
+        _dvMessage.modal('show').on('hidden', function () {
+            window.location = RedirectURL;
+        }); ;
+    }
+}
+//------------------Information Message-------------------------//
+function message_info(Heading, Message, RedirectURL) {
+    if (_dvMessage.is(':visible')) {
+        _dvMessage.modal('hide');
+        setTimeout('message_info("' + Heading + '","' + Message + '")', 500);
+        return;
+    }
+    if (Heading == undefined) {
+        Heading = "Information";
+    }
+    if (Message == undefined) {
+        Message = "";
+    }
+    _dvMessage.removeClass().addClass('modal hide modal-msg-fit fade alert alert-info ');
+    _dvMessageHeading.html('<img  src="http://cdn.nic.in/samagra/Images/Smaily/info.png" width="30px" alt="' + Heading + '" /> ' + Heading);
+    _dvMessageContent.html(Message, RedirectURL);
+    if (RedirectURL == undefined) {
+        _dvMessage.modal('show');
+    }
+    else {
+        _dvMessage.modal('show').on('hidden', function () {
+            window.location = RedirectURL;
+        }); ;
+    }
+}
+//------------------Success Message-------------------------//
+function message_success(Heading, Message, RedirectURL) {
+    if (_dvMessage.is(':visible')) {
+        _dvMessage.modal('hide');
+        setTimeout('message_success("' + Heading + '","' + Message + '")', 500);
+        return;
+    }
+    if (Heading == undefined) {
+        Heading = "Success";
+    }
+    if (Message == undefined) {
+        Message = "Your query is successfully executed.";
+    }
+    _dvMessage.removeClass().addClass('modal hide modal-msg-fit fade alert alert-success ');
+    _dvMessageHeading.html('<img  src="http://cdn.nic.in/samagra/Images/Smaily/success.png" width="30px" alt="' + Heading + '" /> ' + Heading);
+    _dvMessageContent.html(Message, RedirectURL);
+    if (RedirectURL == undefined) {
+        _dvMessage.modal('show');
+    }
+    else {
+        _dvMessage.modal('show').on('hidden', function () {
+            window.location = RedirectURL;
+        }); ;
+    }
+}
